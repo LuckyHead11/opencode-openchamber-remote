@@ -1,0 +1,39 @@
+{
+  "name": "opencode-openchamber-remote",
+  "version": "0.1.0",
+  "description": "OpenCode tools that let an agent act on your other OpenChamber instances: list sessions, send work, read results.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "openchamber",
+    "plugin",
+    "remote",
+    "agent",
+    "sessions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckyHead11/opencode-openchamber-remote.git"
+  },
+  "scripts": {
+    "test": "node --test",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3"
+  }
+}
